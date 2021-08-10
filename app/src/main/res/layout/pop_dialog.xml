@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="45dp"-->
+<!--        android:layout_marginRight="20dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/id_pop_dialog_layout"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:background="@drawable/pop_item_normal"-->
+<!--            android:orientation="vertical" >-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/id_groupchat"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:background="@drawable/pop_list_selector" >-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/id_imageView1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:layout_marginLeft="8dp"-->
+<!--                    android:src="@drawable/pop_group" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:text="发起聊天"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:textColor="#fff"-->
+<!--                    android:textSize="16sp" />-->
+<!--            </LinearLayout>-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/id_imageView5"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/pop_line" />-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/id_addfrd"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:background="@drawable/pop_list_selector" >-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/id_imageView2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:layout_marginLeft="8dp"-->
+<!--                    android:src="@drawable/pop_add" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:text="添加朋友"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:textColor="#fff"-->
+<!--                    android:textSize="16sp" />-->
+<!--            </LinearLayout>-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/id_imageView5"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/pop_line" />-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/id_find"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:background="@drawable/pop_list_selector" >-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/id_imageView3"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:layout_marginLeft="8dp"-->
+<!--                    android:src="@drawable/pop_qrcode" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:text="扫一扫"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:textColor="#fff"-->
+<!--                    android:textSize="16sp" />-->
+<!--            </LinearLayout>-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/id_imageView5"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/pop_line" />-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/id_feedback"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="3dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:background="@drawable/pop_list_selector" >-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/id_imageView4"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:layout_marginLeft="8dp"-->
+<!--                    android:src="@drawable/pop_feedback" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:text="帮助与反馈"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:textColor="#fff"-->
+<!--                    android:textSize="16sp" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+<!--    </RelativeLayout>-->
+
+</RelativeLayout>

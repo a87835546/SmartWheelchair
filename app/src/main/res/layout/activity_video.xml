@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- 标题 -->
+    <include layout="@layout/top_titel_bar"/>
+
+    <tcking.github.com.giraffeplayer2.VideoView
+        android:id="@+id/video_view"
+        android:layout_width="@dimen/px_1000"
+        android:layout_height="@dimen/px_750"
+        android:layout_marginTop="30px"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="@dimen/px_1000"
+        android:layout_height="@dimen/px_410"
+        android:layout_marginTop="30px"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@mipmap/item_button_bg">
+
+        <TextView
+            android:layout_width="79dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="@dimen/px_48"
+            android:layout_marginTop="42px"
+            android:text="控制"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/sp_18"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/px_50"
+            android:layout_marginBottom="@dimen/px_43"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/but_screen_capture"
+                    android:layout_width="@dimen/px_150"
+                    android:layout_height="@dimen/px_150"
+                    android:clickable="true"
+                    android:background="@drawable/rb_comm_screen_capture_drawable_selector"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="截 屏"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/but_video_surveillance"
+                    android:layout_width="@dimen/px_150"
+                    android:layout_height="@dimen/px_150"
+                    android:clickable="true"
+                    android:background="@drawable/rb_comm_video_surveillance_drawable_selector"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="视频录像"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/but_communicate"
+                    android:layout_width="@dimen/px_150"
+                    android:layout_height="@dimen/px_150"
+                    android:clickable="true"
+                    android:background="@drawable/rb_comm_communicate_drawable_selector"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="双向通话"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="@dimen/px_150"
+                    android:layout_height="@dimen/px_150"
+                    android:clickable="true"
+                    android:background="@drawable/rb_comm_sound_off_drawable_selector"/>
+                <TextView
+                    android:id="@+id/but_sound_on_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="静 音"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+<!--        <com.roy.www.smartwheelchair.widget.GridRadioGroup-->
+<!--            android:id="@+id/rg_xzly"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginTop="@dimen/px_50"-->
+<!--            android:layout_marginBottom="@dimen/px_43"-->
+<!--            app:numColumns="4"-->
+<!--            app:horizontalSpacing="@dimen/dp_10"-->
+<!--            android:visibility="gone">-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rb_screen_capture"-->
+<!--                style="@style/bottom_tag_style"-->
+<!--                android:drawableTop="@drawable/rb_comm_screen_capture_drawable_selector"-->
+<!--                android:text="截 屏" />-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rb_video_surveillance"-->
+<!--                style="@style/bottom_tag_style"-->
+<!--                android:drawableTop="@drawable/rb_comm_video_surveillance_drawable_selector"-->
+<!--                android:text="实时录像" />-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rb_communicate"-->
+<!--                style="@style/bottom_tag_style"-->
+<!--                android:drawableTop="@drawable/rb_comm_communicate_drawable_selector"-->
+<!--                android:text="双向通话" />-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rb_sound_off"-->
+<!--                style="@style/bottom_tag_style"-->
+<!--                android:drawableTop="@drawable/rb_comm_sound_off_drawable_selector"-->
+<!--                android:text="静 音" />-->
+
+<!--        </com.roy.www.smartwheelchair.widget.GridRadioGroup>-->
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_but_file"
+        android:layout_width="@dimen/px_1000"
+        android:layout_height="170px"
+        android:layout_marginTop="30px"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:background="@drawable/item_button_bg_selector">
+
+
+        <TextView
+            android:layout_width="@dimen/px_255"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="62px"
+            android:layout_marginBottom="62px"
+            android:layout_marginLeft="151px"
+            android:textColor="#2b2b2b"
+            android:textSize="@dimen/sp_16"
+            android:text="查看文件"/>
+
+        <ImageView
+            android:layout_width="@dimen/px_48"
+            android:layout_height="@dimen/px_46"
+            android:layout_marginTop="62px"
+            android:layout_marginBottom="62px"
+            android:layout_marginLeft="59px"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/ic_file" />
+
+        <ImageView
+            android:layout_width="21px"
+            android:layout_height="@dimen/px_45"
+            android:src="@mipmap/ic_arrows"
+            android:layout_marginRight="@dimen/px_40"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

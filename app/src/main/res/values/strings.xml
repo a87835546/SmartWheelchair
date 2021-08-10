@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">SmartWheelchair</string>
+
+
+    <string name="emergency_contact">紧急联系人</string>
+    <string name="version_info">版本信息</string>
+    <string name="upgrade">升级</string>
+    <string name="quit">退出</string>
+
+
+    <string name="home_control">轮椅控制</string>
+    <string name="home_local">轮椅定位</string>
+    <string name="home_video">视频监控</string>
+    <string name="home_body_info">身体信息</string>
+    <string name="home_music">音乐</string>
+    <string name="home_setting">功能设置</string>
+
+
+    <string name="ble_connect_hint">...请先建立BLE连接...</string>
+    <string name="ble_connect_successful">...BLE连接成功...</string>
+    <string name="ble_connect_fail">...BLE连接失败...</string>
+
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+
+    <string name="hideOption">隐藏设置</string>
+    <string name="showOption">显示设置</string>
+
+
+
+    <string name="fence_round">圆形围栏</string>
+    <string name="fence_polygon">多边形</string>
+    <string name="fence_keyword">关键字围栏</string>
+    <string name="fence_nearby">周边围栏</string>
+    <string name="fence_district">行政区划围栏</string>
+
+    <string name="fenceRadius">围栏半径</string>
+    <string name="meter">米</string>
+    <string name="activatesAction">触发条件</string>
+    <string name="alertIn">进入</string>
+    <string name="alertOut">离开</string>
+    <string name="alertStated">停留</string>
+    <string name="addFence">添加围栏</string>
+    <string name="removeFence">移除围栏</string>
+
+
+
+
+
+</resources>

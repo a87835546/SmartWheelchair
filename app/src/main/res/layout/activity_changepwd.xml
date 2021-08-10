@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_inputphonenum"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.roy.www.smartwheelchair.widget.ImgEditText
+            android:id="@+id/iet_change_pwd_phonenum"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:background="@null"
+            android:inputType="phone"
+            android:drawableRight="@mipmap/delete_image"
+            android:hint="请输入原有手机号进行验证"
+            android:paddingLeft="2dp"
+            android:textColorHint="#565656" />
+
+
+        <com.allen.library.shape.ShapeButton
+            android:id="@+id/sbtn_change_pwd_next"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:shapeCornersRadius="5dp"
+            app:shapeSelectorDisableColor="#c1c1c1"
+            app:shapeSelectorNormalColor="#5bc2d1"
+            app:shapeSelectorPressedColor="#c1c1c1"
+            app:shapeUseSelector="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_inputvercode"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="42dp"
+            android:orientation="horizontal">
+
+            <com.roy.www.smartwheelchair.widget.ImgEditText
+                android:id="@+id/iedt_changepwd_getvode"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableRight="@mipmap/delete_image"
+                android:hint="请输入收到的验证码"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:textColorHint="#565656" />
+
+            <com.roy.www.smartwheelchair.widget.CountDownText
+                android:layout_marginRight="42dp"
+                android:layout_marginLeft="2dp"
+                android:id="@+id/cdt_login_get_verification_code"
+                android:layout_width="111dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_corner_tintazury"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:millisDuration="60000"
+                app:millisGap="1000"
+                tools:text="获取验证码" />
+
+
+        </LinearLayout>
+
+
+        <com.allen.library.shape.ShapeButton
+            android:id="@+id/sbtn_change_pwd_next1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:shapeCornersRadius="5dp"
+            app:shapeSelectorDisableColor="#c1c1c1"
+            app:shapeSelectorNormalColor="#5bc2d1"
+            app:shapeSelectorPressedColor="#c1c1c1"
+            app:shapeUseSelector="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

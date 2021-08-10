@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CountDownText">
+        <attr name="millisDuration" format="integer">60000</attr>
+        <attr name="millisGap" format="integer">1000</attr>
+    </declare-styleable>
+</resources>

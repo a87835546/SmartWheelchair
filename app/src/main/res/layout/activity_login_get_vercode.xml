@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_login_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/top_back_selector" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="89dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="70dp"
+            android:text="登录"
+            android:textColor="#2b2b2b"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="99dp"
+            android:layout_marginRight="42dp"
+            android:orientation="horizontal">
+
+            <com.roy.www.smartwheelchair.widget.ImgEditText
+                android:id="@+id/iedt_login_getvode"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableRight="@mipmap/delete_image"
+                android:hint="请输入收到的验证码"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:textColorHint="#565656" />
+
+            <com.roy.www.smartwheelchair.widget.CountDownText
+                android:layout_marginLeft="2dp"
+                android:id="@+id/cdt_login_get_verification_code"
+                android:layout_width="111dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_corner_tintazury"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:millisDuration="60000"
+                app:millisGap="1000"
+                tools:text="获取验证码" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="42dp"
+            android:background="#aaaaaa" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="42dp">
+
+            <TextView
+                android:id="@+id/tv_login_to_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="注册"
+                android:textColor="#1d1d1d"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_login_to_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="账号密码登录"
+                android:textColor="#1d1d1d"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <com.allen.library.shape.ShapeButton
+            android:id="@+id/sbtn_login_getvercode_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="登   录"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:shapeCornersRadius="5dp"
+            app:shapeSelectorDisableColor="#c1c1c1"
+            app:shapeSelectorNormalColor="#5bc2d1"
+            app:shapeSelectorPressedColor="#c1c1c1"
+            app:shapeUseSelector="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="21dp"
+            android:text="———————— 其他方式登录 ————————" />
+
+
+       <include layout="@layout/layout_login_thrid_platform"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

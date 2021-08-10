@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 标题 -->
+    <include layout="@layout/top_titel_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="340px"
+        android:layout_marginTop="@dimen/px_30"
+        android:background="@drawable/bg_shape"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            style="@style/set_rl_item_style"
+            android:layout_height="@dimen/px_170"
+            android:clickable="true">
+            <TextView
+                style="@style/tv_mark_left_style"
+                android:layout_marginLeft="@dimen/px_80"
+                android:text="设备名称"/>
+            <TextView
+                style="@style/tv_mark_right_style"
+                android:text="智能轮椅"/>
+            <ImageView
+                style="@style/right_arrow_style"
+                android:layout_marginLeft="@dimen/px_80"/>
+            <View
+                style="@style/v_bottom_lint_style"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="340px"
+        android:layout_marginTop="@dimen/px_30"
+        android:background="@drawable/bg_shape"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            style="@style/set_rl_item_style"
+            android:layout_height="@dimen/px_170">
+            <TextView
+                style="@style/tv_mark_left_style"
+                android:layout_marginLeft="@dimen/px_80"
+                android:text="功能日志"/>
+
+            <ImageView
+                style="@style/right_arrow_style"
+                android:layout_marginLeft="@dimen/px_80"/>
+            <View
+                style="@style/v_bottom_lint_style"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/set_rl_item_style"
+            android:layout_height="@dimen/px_170">
+            <TextView
+                style="@style/tv_mark_left_style"
+                android:layout_marginLeft="@dimen/px_80"
+                android:text="设备共享"/>
+
+            <ImageView
+                style="@style/right_arrow_style"
+                android:layout_marginLeft="@dimen/px_80"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

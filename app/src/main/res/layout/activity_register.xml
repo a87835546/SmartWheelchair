@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="89dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="70dp"
+        android:text="注册"
+        android:textColor="#2b2b2b"
+        android:textSize="30sp" />
+
+
+    <com.roy.www.smartwheelchair.widget.ImgEditText
+        android:id="@+id/iet_register_phonenum"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginRight="42dp"
+        android:background="@null"
+        android:inputType="phone"
+        android:drawableRight="@mipmap/delete_image"
+        android:hint="请输入手机号码"
+        android:textSize="14sp"
+        android:paddingLeft="2dp"
+        android:textColorHint="#565656" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:background="#aaaaaa" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_register_tologin"
+            android:text="已有账号？"
+            android:textColor="#1d1d1d"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_register_tologin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="42dp"
+            android:text="点此登录"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <com.allen.library.shape.ShapeButton
+        android:id="@+id/sbtn_register_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:enabled="false"
+        android:text="下一步"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:shapeCornersRadius="5dp"
+        app:shapeSelectorDisableColor="#c1c1c1"
+        app:shapeSelectorNormalColor="#5bc2d1"
+        app:shapeSelectorPressedColor="#c1c1c1"
+        app:shapeUseSelector="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_register_aggrement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:gravity="center"
+            android:text="已阅读并同意"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_register_to_user_aggrement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《用户协议》"
+            android:textColor="#0887a1"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_register_to_user_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《隐私政策》"
+            android:textColor="#0887a1"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <!--        <TableLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="99dp"-->
+    <!--            android:layout_gravity="center_horizontal"-->
+    <!--            android:background="@drawable/border_corner_05dp">-->
+    <!--    -->
+    <!--            <TableRow>-->
+    <!--    -->
+    <!--                <com.roy.www.smartwheelchair.widget.ImgEditText-->
+    <!--                    android:id="@+id/phone_num"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginBottom="10dp"-->
+    <!--                    android:layout_marginTop="10dp"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:background="@null"-->
+    <!--                    android:drawablePadding="15dp"-->
+    <!--                    android:drawableRight="@mipmap/delete_image"-->
+    <!--                    android:hint="手机号码"-->
+    <!--                    android:paddingLeft="15dp"-->
+    <!--                    android:paddingRight="15dp"-->
+    <!--                    android:paddingTop="5dp" />-->
+    <!--            </TableRow>-->
+    <!--    -->
+    <!--            <View-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="0.5dp"-->
+    <!--                android:background="#aaaaaa" />-->
+    <!--    -->
+    <!--    -->
+    <!--            <TableRow>-->
+    <!--    -->
+    <!--                <com.roy.www.smartwheelchair.widget.ImgEditText-->
+    <!--                    android:id="@+id/v_code"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginBottom="10dp"-->
+    <!--                    android:layout_marginTop="10dp"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:background="@null"-->
+    <!--                    android:drawablePadding="15dp"-->
+    <!--                    android:drawableRight="@mipmap/delete_image"-->
+    <!--                    android:hint="请输入验证码"-->
+    <!--                    android:paddingLeft="15dp"-->
+    <!--                    android:paddingRight="15dp"-->
+    <!--                    android:paddingTop="5dp" />-->
+    <!--    -->
+    <!--    -->
+    <!--                <com.roy.www.smartwheelchair.widget.CountDownText-->
+    <!--                    android:id="@+id/cdt_get_verification_code"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:enabled="true"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:background="@drawable/button_corner_tintazury"-->
+    <!--                    android:textSize="14sp"-->
+    <!--                    app:millisDuration="60000"-->
+    <!--                    app:millisGap="1000"-->
+    <!--                    tools:text="获取验证码" />-->
+    <!--    -->
+    <!--    -->
+    <!--            </TableRow>-->
+    <!--    -->
+    <!--            <View-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="0.5dp"-->
+    <!--                android:background="#aaaaaa" />-->
+    <!--    -->
+    <!--            <TableRow>-->
+    <!--    -->
+    <!--                <com.roy.www.smartwheelchair.widget.ImgEditText-->
+    <!--                    android:id="@+id/pwd_new_1"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginBottom="10dp"-->
+    <!--                    android:layout_marginTop="10dp"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:background="@null"-->
+    <!--                    android:drawableLeft="@mipmap/mm_image"-->
+    <!--                    android:drawablePadding="15dp"-->
+    <!--                    android:drawableRight="@mipmap/eye_normal"-->
+    <!--                    android:hint="请输入密码"-->
+    <!--                    android:text="123456"-->
+    <!--                    android:inputType="numberPassword"-->
+    <!--                    android:paddingLeft="15dp"-->
+    <!--                    android:paddingRight="15dp"-->
+    <!--                    android:paddingTop="5dp" />-->
+    <!--            </TableRow>-->
+    <!--    -->
+    <!--    -->
+    <!--            <View-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="0.5dp"-->
+    <!--                android:background="#aaaaaa" />-->
+    <!--    -->
+    <!--            <TableRow>-->
+    <!--    -->
+    <!--                <com.roy.www.smartwheelchair.widget.ImgEditText-->
+    <!--                    android:id="@+id/pwd_new_2"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginBottom="10dp"-->
+    <!--                    android:layout_marginTop="10dp"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:background="@null"-->
+    <!--                    android:drawableLeft="@mipmap/mm_image"-->
+    <!--                    android:drawablePadding="15dp"-->
+    <!--                    android:drawableRight="@mipmap/eye_normal"-->
+    <!--                    android:hint="请再次输入密码"-->
+    <!--                    android:text="123456"-->
+    <!--                    android:inputType="numberPassword"-->
+    <!--                    android:paddingLeft="15dp"-->
+    <!--                    android:paddingRight="15dp"-->
+    <!--                    android:paddingTop="5dp" />-->
+    <!--            </TableRow>-->
+    <!--        </TableLayout>-->
+    <!--    -->
+    <!--        <Button-->
+    <!--            android:id="@+id/but_register"-->
+    <!--            android:layout_width="900px"-->
+    <!--            android:layout_height="@dimen/px_138"-->
+    <!--            android:layout_marginTop="55px"-->
+    <!--            android:layout_gravity="center_horizontal"-->
+    <!--            android:background="@drawable/button_corner_tintazury"-->
+    <!--            android:text="注册"-->
+    <!--            android:textColor="#fff"-->
+    <!--    -->
+    <!--            android:textSize="18sp" />-->
+    <!--    -->
+    <!--    -->
+    <!--    -->
+    <!--        <EditText-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:background="@null"-->
+    <!--            android:hint="请输入验证码"-->
+    <!--            android:inputType="number"-->
+    <!--            android:maxLength="6"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="16sp" />-->
+
+
+    <!--    <androidx.viewpager.widget.ViewPager-->
+    <!--        android:id="@+id/vp_register_map"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:visibility="gone"/>-->
+
+</LinearLayout>

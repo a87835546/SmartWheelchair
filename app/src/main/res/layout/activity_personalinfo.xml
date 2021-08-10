@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_setting"
+        android:orientation="vertical">
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stv_personinfo_account"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp"
+            app:sDividerLineColor="#f6f6f6"
+            app:sDividerLineHeight="1dp"
+            app:sDividerLineType="bottom"
+            app:sLeftTextColor="#2b2b2b"
+            app:sLeftTextSize="13sp"
+            app:sLeftTextString="账号"
+            app:sRightTextColor="#7f7f7f"
+            app:sRightTextSize="13sp"
+            app:sRightTvDrawableRight="@mipmap/ic_arrows" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stv_personinfo_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp"
+            app:sDividerLineColor="#f6f6f6"
+            app:sDividerLineHeight="1dp"
+            app:sLeftTextColor="#2b2b2b"
+            app:sLeftTextSize="13sp"
+            app:sLeftTextString="名称"
+            app:sRightTextColor="#7f7f7f"
+            app:sRightTextSize="13sp"
+            app:sRightTvDrawableRight="@mipmap/ic_arrows" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stv_personinfo_phonenum"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp"
+            app:sLeftTextColor="#2b2b2b"
+            app:sLeftTextSize="13sp"
+            app:sLeftTextString="手机号码"
+            app:sRightTextColor="#7f7f7f"
+            app:sRightTextSize="13sp"
+            app:sDividerLineType="none"
+            app:sRightTvDrawableRight="@mipmap/ic_arrows" />
+
+
+    </LinearLayout>
+
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_personinfo_changepwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:sBackgroundDrawableRes="@drawable/bg_setting"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        app:sDividerLineType="none"
+        app:sLeftTextColor="#2b2b2b"
+        app:sShapeCornersRadius="5dp"
+        app:sLeftTextSize="13sp"
+        app:sLeftTextString="修改密码"
+        app:sRightTvDrawableRight="@mipmap/ic_arrows" />
+
+</LinearLayout>

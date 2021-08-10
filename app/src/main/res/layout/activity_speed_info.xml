@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 标题 -->
+    <include layout="@layout/top_titel_bar"/>
+    
+    <ImageView
+        android:layout_width="@dimen/px_1000"
+        android:layout_height="960px"
+        android:layout_marginTop="@dimen/px_30"
+        android:layout_marginLeft="@dimen/px_40"
+        android:layout_marginRight="@dimen/px_40"
+        android:background="@mipmap/ic_bg_speed"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_but_speed_info"
+        android:layout_width="@dimen/px_1000"
+        android:layout_height="@dimen/px_280"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="@drawable/item_button_bg_selector">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="161px"
+            android:paddingLeft="76px"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_94"
+                android:textSize="@dimen/sp_25"
+                android:textStyle="bold"
+                android:textColor="#5bc2d1"
+                android:text="10"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36px"
+                android:layout_marginTop="3dp"
+                android:textColor="#2b2b2b"
+                android:textSize="@dimen/sp_12"
+                android:text="平均速度(km/h)"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="161px"
+            android:paddingLeft="76px"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_94"
+                android:textSize="@dimen/sp_25"
+                android:textStyle="bold"
+                android:textColor="#5bc2d1"
+                android:text="15"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36px"
+                android:layout_marginTop="3dp"
+                android:textColor="#2b2b2b"
+                android:textSize="@dimen/sp_12"
+                android:text="实时速度(km/h)"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="161px"
+            android:paddingLeft="76px"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_94"
+                android:textSize="@dimen/sp_25"
+                android:textStyle="bold"
+                android:textColor="#5bc2d1"
+                android:text="20"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36px"
+                android:layout_marginTop="3dp"
+                android:textColor="#2b2b2b"
+                android:textSize="@dimen/sp_12"
+                android:text="最大速度(km/h)"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

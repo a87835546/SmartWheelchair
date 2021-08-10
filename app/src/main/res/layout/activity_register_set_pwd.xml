@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_register_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/top_back_selector" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="165dp"
+            android:text="设置密码"
+            android:textColor="#2b2b2b"
+            android:textSize="@dimen/sp_40" />
+
+
+        <com.roy.www.smartwheelchair.widget.ImgEditText
+            android:id="@+id/iedt_register_pwd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="99dp"
+            android:layout_marginRight="42dp"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:drawableRight="@mipmap/delete_image"
+            android:hint="请输入你的密码"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textColorHint="#565656" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="42dp"
+            android:background="#aaaaaa" />
+
+
+        <com.roy.www.smartwheelchair.widget.ImgEditText
+            android:id="@+id/iedt_register_pwd2"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:background="@null"
+            android:drawableRight="@mipmap/delete_image"
+            android:hint="请再次输入你的密码"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textColorHint="#565656" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="42dp"
+            android:background="#aaaaaa" />
+
+        <TextView
+            android:id="@+id/tv_register_pwd_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="8dp"
+            android:text="请设置密码"
+            android:textColor="#dc0000"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+
+        <com.allen.library.shape.ShapeButton
+            android:id="@+id/sbtn_register_set_pwd_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:shapeCornersRadius="5dp"
+            app:shapeSelectorDisableColor="#c1c1c1"
+            app:shapeSelectorNormalColor="#5bc2d1"
+            app:shapeSelectorPressedColor="#c1c1c1"
+            app:shapeUseSelector="true" />
+    </LinearLayout>
+</RelativeLayout>

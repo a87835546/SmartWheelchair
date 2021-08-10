@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 标题 -->
+    <include layout="@layout/top_titel_bar"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="668px"
+        android:layout_height="668px"
+        android:layout_marginTop="25px"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/ic_bg_control">
+
+
+        <ImageView
+            android:id="@+id/iv_but_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_stop"/>
+
+        <ImageView
+            android:id="@+id/iv_but_top"
+            android:layout_width="@dimen/px_100"
+            android:layout_height="@dimen/px_50"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_top"/>
+
+        <ImageView
+            android:id="@+id/iv_but_down"
+            android:layout_width="@dimen/px_100"
+            android:layout_height="@dimen/px_50"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_down"/>
+
+        <ImageView
+            android:id="@+id/iv_but_left"
+            android:layout_width="@dimen/px_50"
+            android:layout_height="@dimen/px_100"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_left"/>
+
+        <ImageView
+            android:id="@+id/iv_but_right"
+            android:layout_width="@dimen/px_50"
+            android:layout_height="@dimen/px_100"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_right"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36px"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+
+        <ImageView
+            android:id="@+id/iv_ble_status"
+            android:layout_width="@dimen/px_60"
+            android:layout_height="@dimen/px_60"
+            android:src="@mipmap/ic_ble_err"/>
+
+        <TextView
+            android:id="@+id/tv_ble_status"
+            android:layout_width="234px"
+            android:layout_height="41px"
+            android:layout_marginLeft="@dimen/px_6"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/sp_12"
+            android:text="未连接"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_but_speed_info"
+        android:layout_width="@dimen/px_1000"
+        android:layout_height="@dimen/px_280"
+        android:layout_marginTop="30px"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="@drawable/item_button_bg_selector">
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="161px"
+           android:paddingLeft="76px"
+           android:orientation="vertical"
+           android:layout_gravity="center_vertical">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="@dimen/px_94"
+               android:textSize="@dimen/sp_25"
+               android:textStyle="bold"
+               android:textColor="#5bc2d1"
+               android:text="0"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="36px"
+               android:layout_marginTop="3dp"
+               android:gravity="center_vertical"
+               android:textColor="#2b2b2b"
+               android:textSize="@dimen/sp_12"
+               android:text="平均速度(km/h)"/>
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="161px"
+            android:paddingLeft="76px"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_94"
+                android:textSize="@dimen/sp_25"
+                android:textStyle="bold"
+                android:textColor="#5bc2d1"
+                android:text="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36px"
+                android:layout_marginTop="3dp"
+                android:gravity="center_vertical"
+                android:textColor="#2b2b2b"
+                android:textSize="@dimen/sp_12"
+                android:text="实时速度(km/h)"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="161px"
+            android:paddingLeft="76px"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_94"
+                android:textSize="@dimen/sp_25"
+                android:textStyle="bold"
+                android:textColor="#5bc2d1"
+                android:text="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36px"
+                android:layout_marginTop="3dp"
+                android:gravity="center_vertical"
+                android:textColor="#2b2b2b"
+                android:textSize="@dimen/sp_12"
+                android:text="最大速度(km/h)"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_but_power_info"
+        android:layout_width="@dimen/px_1000"
+        android:layout_height="@dimen/px_280"
+        android:layout_marginTop="30px"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="@mipmap/item_button_bg">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="161px"
+            android:paddingLeft="76px"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_c_power"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_94"
+                android:textSize="@dimen/sp_25"
+                android:textStyle="bold"
+                android:textColor="#5bc2d1"
+                android:text="100%"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36px"
+                android:layout_marginTop="3dp"
+                android:textColor="#2b2b2b"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/sp_12"
+                android:text="剩余电量"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="161px"
+            android:paddingLeft="76px"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_c_remain_mileage"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_94"
+                android:textSize="@dimen/sp_25"
+                android:textStyle="bold"
+                android:textColor="#5bc2d1"
+                android:text="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36px"
+                android:layout_marginTop="3dp"
+                android:textColor="#2b2b2b"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/sp_12"
+                android:text="剩余里程(km)"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="161px"
+            android:paddingLeft="76px"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_c_total_mileage"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_94"
+                android:textSize="@dimen/sp_25"
+                android:textStyle="bold"
+                android:textColor="#5bc2d1"
+                android:text="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36px"
+                android:layout_marginTop="3dp"
+                android:textColor="#2b2b2b"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/sp_12"
+                android:text="总行驶里程(km)"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_but_stop"
+        android:layout_width="@dimen/px_1000"
+        android:layout_height="170px"
+        android:layout_marginTop="30px"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:background="@drawable/item_button_bg_selector">
+
+        <TextView
+            android:layout_width="@dimen/px_255"
+            android:layout_height="@dimen/px_46"
+            android:layout_marginTop="62px"
+            android:layout_marginBottom="62px"
+            android:layout_marginLeft="184px"
+            android:textColor="#2b2b2b"
+            android:textSize="@dimen/sp_15"
+            android:text="紧急制动"/>
+
+        <ImageView
+            android:layout_width="@dimen/px_138"
+            android:layout_height="@dimen/px_138"
+            android:layout_marginTop="@dimen/px_16"
+            android:layout_marginBottom="@dimen/px_16"
+            android:layout_marginLeft="18px"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/ic_c_stop" />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/px_1000"
+        android:layout_height="170px"
+        android:layout_marginTop="30px"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:background="@drawable/item_button_bg_selector">
+
+        <TextView
+            android:layout_width="@dimen/px_255"
+            android:layout_height="@dimen/px_46"
+            android:layout_marginTop="62px"
+            android:layout_marginBottom="62px"
+            android:layout_marginLeft="189px"
+            android:textColor="#2b2b2b"
+            android:textSize="@dimen/sp_15"
+            android:text="轮椅提示音"/>
+
+        <ImageView
+            android:layout_width="@dimen/px_80"
+            android:layout_height="@dimen/px_80"
+            android:layout_marginTop="@dimen/px_45"
+            android:layout_marginBottom="@dimen/px_45"
+            android:layout_marginLeft="@dimen/px_50"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/ic_volume_notice" />
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

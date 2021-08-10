@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="89dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="70dp"
+        android:text="登录"
+        android:textColor="#2b2b2b"
+        android:textSize="30dp" />
+
+
+    <com.roy.www.smartwheelchair.widget.ImgEditText
+        android:id="@+id/iet_login_phonennum"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginRight="42dp"
+        android:background="@null"
+        android:inputType="phone"
+        android:textSize="14sp"
+        android:drawableRight="@mipmap/delete_image"
+        android:hint="请输入手机号码"
+        android:paddingLeft="2dp"
+        android:textColorHint="#565656" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="42dp"
+        android:background="#aaaaaa" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="42dp">
+
+        <TextView
+            android:id="@+id/tv_login_to_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="注册"
+            android:textColor="#1d1d1d"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_login_by_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="账号密码登录"
+            android:textColor="#1d1d1d"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+    <com.allen.library.shape.ShapeButton
+        android:id="@+id/sbtn_login_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:shapeCornersRadius="5dp"
+        app:shapeSelectorDisableColor="#c1c1c1"
+        app:shapeSelectorNormalColor="#5bc2d1"
+        app:shapeSelectorPressedColor="#c1c1c1"
+        app:shapeUseSelector="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="21dp"
+        android:text="———————— 其他方式登录 ————————" />
+
+    <include layout="@layout/layout_login_thrid_platform"/>
+
+
+    <!--    <TextView-->
+    <!--        android:layout_width="89dp"-->
+    <!--        android:layout_height="47dp"-->
+    <!--        android:layout_marginLeft="83px"-->
+    <!--        android:layout_marginTop="329px"-->
+    <!--        android:text="登录"-->
+    <!--        android:textColor="#565656"-->
+    <!--        android:textSize="@dimen/sp_40" />-->
+
+
+    <!--    <TableLayout-->
+    <!--        android:layout_width="907px"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+    <!--        android:layout_marginTop="205px"-->
+    <!--        android:background="@drawable/border_corner_05dp">-->
+
+    <!--        <TableRow>-->
+
+    <!--            <com.roy.www.smartwheelchair.widget.ImgEditText-->
+    <!--                android:id="@+id/accountIet"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="10dp"-->
+    <!--                android:layout_marginBottom="10dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@null"-->
+    <!--                android:drawableLeft="@mipmap/tx_image"-->
+    <!--                android:drawableRight="@mipmap/delete_image"-->
+    <!--                android:drawablePadding="15dp"-->
+    <!--                android:hint="手机或邮箱"-->
+    <!--                android:paddingLeft="15dp"-->
+    <!--                android:paddingTop="5dp"-->
+    <!--                android:paddingRight="15dp"-->
+    <!--                android:text="admin" />-->
+    <!--        </TableRow>-->
+
+    <!--        <View-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0.5dp"-->
+    <!--            android:background="#aaaaaa" />-->
+
+    <!--        <TableRow>-->
+
+    <!--            <com.roy.www.smartwheelchair.widget.ImgEditText-->
+    <!--                android:id="@+id/pwdIet"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="10dp"-->
+    <!--                android:layout_marginBottom="10dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@null"-->
+    <!--                android:drawableLeft="@mipmap/mm_image"-->
+    <!--                android:drawableRight="@mipmap/eye_normal"-->
+    <!--                android:drawablePadding="15dp"-->
+    <!--                android:hint="密码"-->
+    <!--                android:inputType="numberPassword"-->
+    <!--                android:paddingLeft="15dp"-->
+    <!--                android:paddingTop="5dp"-->
+    <!--                android:paddingRight="15dp"-->
+    <!--                android:text="123456" />-->
+    <!--        </TableRow>-->
+    <!--    </TableLayout>-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/login"-->
+    <!--        android:layout_width="900px"-->
+    <!--        android:layout_height="@dimen/px_138"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+    <!--        android:layout_marginTop="55px"-->
+    <!--        android:background="@drawable/button_corner_tintazury"-->
+    <!--        android:text="登 录"-->
+    <!--        android:textColor="#fff"-->
+
+    <!--        android:textSize="18sp" />-->
+
+
+</LinearLayout>

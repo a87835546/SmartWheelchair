@@ -1,0 +1,178 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="GridRadioGroup">
+        <attr name="numColumns" format="integer" />
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+    </declare-styleable>
+
+
+    <!-- 底部按钮style -->
+    <style name="bottom_tag_style">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">@dimen/dp_10</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/button_textcolor_drawable_selector</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_weight">1</item>
+
+    </style>
+
+    <!-- 底部按钮style -->
+    <style name="text_bottom_style">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">@drawable/button_textcolor_drawable_selector</item>
+        <item name="android:textSize">20sp</item>
+
+    </style>
+
+
+
+
+
+
+    <style name="image_view_style">
+        <item name="android:layout_width">@dimen/dp_45</item>
+        <item name="android:layout_height">@dimen/dp_45</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/dp_15</item>
+    </style>
+
+    //================================VIDEO===================================
+
+
+
+
+
+    //================================HOME===================================
+
+    <style name="home_ll_but_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/but_selector</item>
+    </style>
+
+
+    <style name="home_iv_style">
+        <item name="android:layout_width">@dimen/px_190</item>
+        <item name="android:layout_height">@dimen/px_190</item>
+        <item name="android:layout_marginTop">@dimen/px_137</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+
+    <style name="home_tv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/px_88</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    //================================BODY_INFO===================================
+
+    <style name="set_rl_item_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px_132</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="tv_mark_left_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/px_40</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+
+    </style>
+
+    <style name="tv_mark_right_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">95px</item>
+        <item name="android:textColor">@color/gary</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:text">未设置</item>
+    </style>
+
+
+
+
+    <style name="v_bottom_lint_style">
+        <item name="android:layout_width">920px</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginTop">130px</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@color/gary</item>
+
+    </style>
+
+
+    <style name="right_arrow_style">
+        <item name="android:layout_width">21px</item>
+        <item name="android:layout_height">42px</item>
+        <item name="android:layout_marginRight">@dimen/px_40</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@mipmap/ic_arrows</item>
+
+    </style>
+
+
+    //================================Music===================================
+
+    <style name="netease_toolbar_title" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="netease_toolbar_subtitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textColor">#eeeeee</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="neteasa_music_time_text_sytle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ccc</item>
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="neteasa_music_time_seek_bar_sytle"
+        parent="Widget.AppCompat.SeekBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:thumb">@mipmap/ic_seekbar_thumb</item>
+    </style>
+
+
+</resources>

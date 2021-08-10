@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_132">
+
+
+        <ImageView
+            android:id="@+id/iv_admin"
+            android:layout_width="@dimen/px_200"
+            android:layout_height="@dimen/px_120"
+            android:layout_marginTop="@dimen/px_6"
+            android:layout_marginBottom="@dimen/px_6"
+            android:layout_marginLeft="@dimen/px_48"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/home_user_selector"/>
+
+        <ImageView
+            android:id="@+id/iv_scan_qr_codes"
+            android:layout_width="@dimen/px_120"
+            android:layout_height="@dimen/px_120"
+            android:layout_marginTop="@dimen/px_6"
+            android:layout_marginBottom="@dimen/px_6"
+            android:layout_marginRight="@dimen/px_49"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/home_scan_qt_selector"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_341"
+        android:layout_marginTop="@dimen/px_132"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_20"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:text="智能轮椅"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:layout_marginTop="10px"
+            android:layout_marginRight="@dimen/dp_25"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="wrap_content"
+                        android:text="剩余电量"/>
+                    <TextView
+                        android:id="@+id/tv_power"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0%"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="wrap_content"
+                        android:text="剩余里程"/>
+                    <TextView
+                        android:id="@+id/tv_mileage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0km"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="wrap_content"
+                        android:text="总行驶里程"/>
+                    <TextView
+                        android:id="@+id/tv_total_mileage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0km"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dp_5"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_connect_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="蓝牙连接状态"/>
+
+
+                <TextView
+                    android:id="@+id/tv_music_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="音乐正在播放"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+    //=========================功能图标=======================
+
+    <LinearLayout
+        android:layout_width="1040px"
+        android:layout_height="match_parent"
+        android:layout_marginTop="473px"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_but_controller"
+                style="@style/home_ll_but_style">
+                <ImageView
+                    style="@style/home_iv_style"
+                    android:src="@mipmap/ic_home_controller" />
+                <TextView
+                    style="@style/home_tv_style"
+                    android:text="@string/home_control"/>
+            </LinearLayout>
+
+<!--            <View-->
+<!--                android:layout_width="@dimen/px_40"-->
+<!--                android:layout_height="match_parent"/>-->
+
+            <LinearLayout
+                android:id="@+id/ll_but_local"
+                style="@style/home_ll_but_style">
+                <ImageView
+                    style="@style/home_iv_style"
+                    android:src="@mipmap/ic_home_local" />
+                <TextView
+                    style="@style/home_tv_style"
+                    android:text="@string/home_local"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/px_40"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_but_video"
+                style="@style/home_ll_but_style">
+                <ImageView
+                    style="@style/home_iv_style"
+                    android:src="@mipmap/ic_home_monitor_camera" />
+                <TextView
+                    style="@style/home_tv_style"
+                    android:text="@string/home_video"/>
+            </LinearLayout>
+
+<!--            <View-->
+<!--                android:layout_width="@dimen/px_40"-->
+<!--                android:layout_height="match_parent"/>-->
+
+            <LinearLayout
+                android:id="@+id/ll_but_body_info"
+                style="@style/home_ll_but_style"
+                android:layout_weight="1">
+                <ImageView
+                    style="@style/home_iv_style"
+                    android:src="@mipmap/ic_home_body_info" />
+                <TextView
+                    style="@style/home_tv_style"
+                    android:text="@string/home_body_info"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/px_40"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_but_music"
+                style="@style/home_ll_but_style">
+                <ImageView
+                    style="@style/home_iv_style"
+                    android:src="@mipmap/ic_home_music" />
+                <TextView
+                    style="@style/home_tv_style"
+                    android:text="@string/home_music"/>
+            </LinearLayout>
+
+<!--            <View-->
+<!--                android:layout_width="@dimen/px_40"-->
+<!--                android:layout_height="match_parent"/>-->
+
+            <LinearLayout
+                android:id="@+id/ll_but_setting"
+                style="@style/home_ll_but_style">
+                <ImageView
+                    style="@style/home_iv_style"
+                    android:src="@mipmap/ic_home_set" />
+                <TextView
+                    style="@style/home_tv_style"
+                    android:text="@string/home_setting"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

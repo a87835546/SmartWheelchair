@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 标题 -->
+    <include layout="@layout/top_titel_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px_30">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="@dimen/px_1000"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_shape"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/px_1000"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="52px">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_40"
+                        android:text="紧急急救卡"
+                        android:textColor="@color/black"
+                        android:textSize="23sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_40"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="117px"
+                        android:text="编辑"
+                        android:textColor="@color/black"
+                        android:textSize="23sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/px_1000"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="126px">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_40"
+                        android:text="姓名"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_30" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_40"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="117px"
+                        android:textColor="@color/black"
+                        android:textSize="23sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/set_rl_item_style"
+                    android:layout_marginTop="58px">
+                    <TextView
+                        style="@style/tv_mark_left_style"
+                        android:text="体重"/>
+                    <TextView
+                        style="@style/tv_mark_right_style"/>
+                    <ImageView
+                        style="@style/right_arrow_style"/>
+                    <View
+                        style="@style/v_bottom_lint_style"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/set_rl_item_style">
+                    <TextView
+                        style="@style/tv_mark_left_style"
+                        android:text="血型"/>
+                    <TextView
+                        style="@style/tv_mark_right_style"/>
+                    <ImageView
+                        style="@style/right_arrow_style"/>
+                    <View
+                        style="@style/v_bottom_lint_style"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/set_rl_item_style">
+                    <TextView
+                        style="@style/tv_mark_left_style"
+                        android:text="出生年月"/>
+                    <TextView
+                        style="@style/tv_mark_right_style"/>
+                    <ImageView
+                        style="@style/right_arrow_style"/>
+                    <View
+                        style="@style/v_bottom_lint_style"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/set_rl_item_style">
+                    <TextView
+                        style="@style/tv_mark_left_style"
+                        android:text="身高"/>
+                    <TextView
+                        style="@style/tv_mark_right_style"/>
+                    <ImageView
+                        style="@style/right_arrow_style"/>
+                    <View
+                        style="@style/v_bottom_lint_style"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/set_rl_item_style">
+
+                    <TextView
+                        style="@style/tv_mark_left_style"
+                        android:text="既往病史" />
+
+                    <TextView style="@style/tv_mark_right_style" />
+
+                    <ImageView
+                        style="@style/right_arrow_style" />
+
+                    <View style="@style/v_bottom_lint_style" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/set_rl_item_style">
+                    <TextView
+                        style="@style/tv_mark_left_style"
+                        android:text="家族病史"/>
+                    <TextView
+                        style="@style/tv_mark_right_style"/>
+                    <ImageView
+                        style="@style/right_arrow_style"/>
+                    <View
+                        style="@style/v_bottom_lint_style"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/set_rl_item_style">
+                    <TextView
+                        style="@style/tv_mark_left_style"
+                        android:text="过敏反应"/>
+                    <TextView
+                        style="@style/tv_mark_right_style"/>
+                    <ImageView
+                        style="@style/right_arrow_style"/>
+                    <View
+                        style="@style/v_bottom_lint_style"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/set_rl_item_style">
+                    <TextView
+                        style="@style/tv_mark_left_style"
+                        android:text="当前用药"/>
+                    <TextView
+                        style="@style/tv_mark_right_style"/>
+                    <ImageView
+                        style="@style/right_arrow_style"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="@dimen/px_1000"
+                android:layout_height="match_parent"
+                android:layout_marginTop="31px"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_shape"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/px_1000"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="52px">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_40"
+                        android:text="紧急联系人"
+                        android:textColor="@color/black"
+                        android:textSize="23sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_40"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="117px"
+                        android:text="添加"
+                        android:textColor="@color/black"
+                        android:textSize="23sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/set_rl_item_style"
+                    android:layout_marginTop="88px">
+                    <TextView
+                        style="@style/tv_mark_left_style"
+                        android:text="姓名"/>
+                    <TextView
+                        style="@style/tv_mark_right_style"/>
+                    <ImageView
+                        style="@style/right_arrow_style"/>
+                    <View
+                        style="@style/v_bottom_lint_style"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/set_rl_item_style">
+                    <TextView
+                        style="@style/tv_mark_left_style"
+                        android:text="电话"/>
+                    <TextView
+                        style="@style/tv_mark_right_style"/>
+                    <ImageView
+                        style="@style/right_arrow_style"/>
+                    <View
+                        style="@style/v_bottom_lint_style"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/set_rl_item_style">
+                    <TextView
+                        style="@style/tv_mark_left_style"
+                        android:text="关系"/>
+                    <TextView
+                        style="@style/tv_mark_right_style"/>
+                    <ImageView
+                        style="@style/right_arrow_style"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

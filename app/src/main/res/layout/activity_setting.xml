@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:background="@drawable/bg_setting"
+        android:paddingTop="@dimen/dp_13"
+        android:paddingBottom="@dimen/dp_13"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.allen.library.SuperTextView
+        android:background="@color/white"
+        android:id="@+id/stv_setting_push"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:sLeftBottomTextSize="13sp"
+        app:sLeftTopTextString="报警推送"
+        app:sLeftBottomTextString="需要开启手机通知栏提醒权限"
+        app:sRightViewMarginRight="20dp"
+        app:sLeftTopTextColor="#000000"
+        app:sLeftViewGravity="left_center"
+        app:sRightViewType="switchBtn"
+        app:sDividerLineColor="#f6f6f6"
+        app:sDividerLineHeight="1dp"
+        app:sDividerLineType="bottom"
+        app:sSwitchIsChecked="false"
+        app:sSwitchMinWidth="30dp"
+        app:sThumbResource="@drawable/thumb"
+        app:sTrackResource="@drawable/track" />
+
+        <com.allen.library.SuperTextView
+            android:background="@color/white"
+            android:id="@+id/stv_setting_push_tophone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftBottomTextSize="13sp"
+            app:sLeftTopTextString="推送至手机"
+            app:sLeftBottomTextString="开启后，报警信息将推送至手机"
+            app:sRightViewMarginRight="20dp"
+            app:sLeftTopTextColor="#000000"
+            app:sLeftViewGravity="left_center"
+            app:sRightViewType="switchBtn"
+            app:sDividerLineColor="#f6f6f6"
+            app:sDividerLineHeight="1dp"
+            app:sDividerLineType="bottom"
+            app:sSwitchIsChecked="false"
+            app:sSwitchMinWidth="30dp"
+            app:sThumbResource="@drawable/thumb"
+            app:sTrackResource="@drawable/track" />
+
+        <com.allen.library.SuperTextView
+            android:background="@color/white"
+            android:id="@+id/stv_setting_push_toemer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftBottomTextSize="13sp"
+            app:sLeftTopTextString="推送至紧急联系人"
+            app:sLeftBottomTextString="开启后，报警信息将短信推送至紧急联系人"
+            app:sRightViewMarginRight="20dp"
+            app:sLeftTopTextColor="#000000"
+            app:sLeftViewGravity="left_center"
+            app:sRightViewType="switchBtn"
+            app:sDividerLineColor="#f6f6f6"
+            app:sDividerLineHeight="1dp"
+            app:sDividerLineType="bottom"
+            app:sSwitchIsChecked="false"
+            app:sSwitchMinWidth="30dp"
+            app:sThumbResource="@drawable/thumb"
+            app:sTrackResource="@drawable/track" />
+
+    </LinearLayout>
+
+</LinearLayout>
